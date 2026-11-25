@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hello From HTML</h1>  
-  <script src="index.js"></script>
+  <main class="page">
+    <section class="profile-card" aria-label="User profile">
+      <div class="profile-art">
+        <svg class="avatar" viewBox="0 0 320 320" role="img" aria-label="Illustration of a person wearing a suit">
+          <!-- shoulders and suit -->
+          <path d="M20 320c8-75 45-108 105-120h70c60 12 97 45 105 120z" fill="#536b80"/>
+          <path d="M119 202l41 38 41-38 29 118H90z" fill="#f4f5f7"/>
+          <path d="M145 228h30l17 92h-64z" fill="#713a9b"/>
+          <path d="M153 229h14l8 20-15 19-15-19z" fill="#8a4db0"/>
+          <!-- neck -->
+          <path d="M127 173h66v52c-16 20-50 20-66 0z" fill="#e8cdbd"/>
+          <!-- ears and face -->
+          <ellipse cx="91" cy="116" rx="17" ry="27" fill="#e8cdbd"/>
+          <ellipse cx="229" cy="116" rx="17" ry="27" fill="#e8cdbd"/>
+          <path d="M94 84c0-48 30-69 66-69s66 21 66 69v52c0 52-32 85-66 85s-66-33-66-85z" fill="#efd8c9"/>
+          <!-- hair -->
+          <path d="M92 116c-8-54 12-92 51-103 35-10 80 4 91 47 5 18 2 41-3 58-5-9-8-20-10-33-13 9-28 12-45 9-22-4-40-16-55-28-5 19-14 36-29 50z" fill="#343a42"/>
+          <path d="M97 77c10-43 43-64 78-62 34 2 54 20 63 49-21-20-45-24-68-18-25 7-45 19-73 31z" fill="#343a42"/>
+        </svg>
+        <div class="art-shade"></div>
+      </div>
+
+      <div class="profile-info">
+        <h1 id="userName">John Doe</h1>
+        <p class="user-role" id="userRole">Male</p>
+        <div class="actions">
+          <button class="action-button" id="googleButton" type="button">Google User</button>
+          <button class="action-button" id="randomButton" type="button">Random User</button>
+        </div>
+        <p class="status" id="statusMessage" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
